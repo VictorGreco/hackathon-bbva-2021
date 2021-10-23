@@ -144,7 +144,6 @@ Después de hacer una extensa búsqueda en las fuentes de datos, parece ser que 
     - **Communications** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
     - **Other** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
 
-
 ### GDPR y tratamiento del dato
 Nos regimos, para el alcance del MVP, en la legislación mexicana referente al tratamiento del dato privado y público.
 En caso de desarrollar este proyecto a nivel global deberíamos considerar las diferentes legislaciones de GDPR y tratamiento del dato a nivel geográfico. 
@@ -209,6 +208,8 @@ Para la vista en detalle queremos inspirarnos en un diseño parecido al siguient
 - [APIs y datos de terceros](https://github.com/VictorGreco/hackathon-bbva-2021/blob/main/TDR.md#third-party-considerations) : visita la sección *Third-party considerations* para más información.
 
 <img src="images/tech-stack-graphic.png" alt="Logo">
+
+<img src="images/flujo-de-datos.jpeg" alt="Logo">
 
 ## 📚 Otros recursos 📚
 
