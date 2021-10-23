@@ -35,17 +35,17 @@ Nosotros queremos ir un paso más allá y proporcionar una forma sencilla y visu
 - Panel de control con vista detallada por cada empresa con todos los datos medioambientales que podamos proporcionar y calcular.
  
 - Datos por tipo de emisión :
-    - *Emisiones directas* : Tipo de sector, GHG Protocol, Tipo de producto/servicio, Combustión estacionaria, Combustión móvil, Procesos industriales, Liberación de GEI en sistemas antropogénicos, Uso del suelo, los cambios de uso del suelo y la silvicultura.
+    - *Emisiones directas* : tipo de sector, GHG Protocol, tipo de producto/servicio, combustión estacionaria, combustión móvil, procesos industriales, Liberación de GEI en sistemas antropogénicos, uso del suelo, los cambios de uso del suelo y la silvicultura.
  
-    - *Emisiones indirectas* : Transporte hasta cliente final, Gastos energéticos, Extracción, transporte y procesamiento del combustible, Producción de los bienes de capital, Pérdidas por transporte y distribución, Electricidad importada, Energía importada, excluyendo la electricidad.
+    - *Emisiones indirectas* : transporte hasta cliente final, gastos energéticos, extracción, transporte y procesamiento del combustible, Producción de los bienes de capital, pérdidas por transporte y distribución, electricidad importada, energía importada, excluyendo la electricidad.
  
-    - *Otras emisiones indirectas* : Combustible quemado en los medios de transporte, Fugas de gases de refrigeración, Aguas arriba provenientes de la generación y del transporte/distribución del combustible, Construcción de los medios de transporte, Transporte y distribución de bienes aguas arriba, provenientes de fletes pagados por la organización, Transporte y distribución de bienes aguas abajo, que no son costeados por la organización, Desplazamiento diario de los empleados o teletrabajo, Transporte de clientes y visitantes, a las instalaciones de la compañía, Viajes de negocio, debidas a combustible consumido en las fuentes móviles. Se pueden incluir las noches de hotel del viaje de negocio, provenientes de los productos comprados, fase de aguas arriba de los productos comprados debidas a su fabricación, Fase de aguas arriba de la producción de todos los bienes de capital comprados y amortizados: equipos, maquinarias, edificios, instalaciones y vehículos, Disposición de residuos sólidos y líquidos. Las emisiones provenientes del transporte de de los residuos se pueden cuantificar aquí o en el apartado de emisiones debidas al transporte, equipos arrendados por la organización, Otros servicios, como consultoría, limpieza, mantenimiento, correos, mensajería, bancos, etc, provenientes del uso del producto durante su vida útil, etapa de fin de vida del producto vendido, provenientes de las inversiones.
+    - *Otras emisiones indirectas* : combustible quemado en los medios de transporte, fugas de gases de refrigeración, aguas arriba provenientes de la generación y del transporte/distribución del combustible, construcción de los medios de transporte, transporte y distribución de bienes aguas arriba, provenientes de fletes pagados por la organización, transporte y distribución de bienes aguas abajo, que no son costeados por la organización, desplazamiento diario de los empleados o teletrabajo, transporte de clientes y visitantes, a las instalaciones de la compañía, viajes de negocio, debidas a combustible consumido en las fuentes móviles. Se pueden incluir las noches de hotel del viaje de negocio, provenientes de los productos comprados, fase de aguas arriba de los productos comprados debidas a su fabricación, Fase de aguas arriba de la producción de todos los bienes de capital comprados y amortizados: equipos, maquinarias, edificios, instalaciones y vehículos, disposición de residuos sólidos y líquidos. Las emisiones provenientes del transporte de de los residuos se pueden cuantificar aquí o en el apartado de emisiones debidas al transporte, equipos arrendados por la organización, otros servicios, como consultoría, limpieza, mantenimiento, correos, mensajería, bancos, etc, provenientes del uso del producto durante su vida útil, etapa de fin de vida del producto vendido, provenientes de las inversiones.
  
 - Datos por categoría :
-    - *Producto* : Tipo de sector, GHG Protocol, Tipo de producto/servicio, Transporte hasta cliente final,
+    - *Producto* : tipo de sector, GHG Protocol, tipo de producto/servicio, transporte hasta cliente final,
     Gestión energética, reciclaje y gestión de residuos.
-    - *Gestión* : Grado de automatización de los procesos, Aumento de la inversión, Grado de digitalización, Tipología de ERP, Cantidad de siniestros y negligencias.
-    - *Empleados* : Grado de teletrabajo vs presencial, m2 de las oficinas y vestimenta reglamentaria de los empleados, numero de empleados, viajes relacionados con el trabajo.
+    - *Gestión* : grado de automatización de los procesos, aumento de la inversión, grado de digitalización, tipología de ERP, Cantidad de siniestros y negligencias.
+    - *Empleados* : grado de teletrabajo vs presencial, m2 de las oficinas y vestimenta reglamentaria de los empleados, numero de empleados, viajes relacionados con el trabajo.
  
 - Creación de una calificación absoluta, objetiva y ponderada sobre el impacto medioambiental de dicha empresa.
  
@@ -96,7 +96,38 @@ Como responsable de cuentas me gustaría poder tener un panel de control donde p
 Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con un análisis más detallado para poder promover diferentes productos y asesoramiento.
 
 ### Limitaciones técnicas
-Después de hacer una extensa búsqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo.
+Después de hacer una extensa búsqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo nos centraremos en fuentes de datos publicos que reflejan la situación de México y LATAM, dejamos la posibilidad de en futuras versiones escalar a la solución a nivel global.
+
+### Formulas de cálculo de emisiones
+- 
+- 
+- 
+- 
+- 
+
+
+### GDPR y tratamiento del dato
+Nos regiremos, para el alcance del MVP, en la legislación mexicana referente al tratamiento del dato privado y público.
+En caso de desarrollar este proyecto a nivel global deríamos considerar las diferentes legislaciones de GDPR y traramiento del dato a nivel geografico. 
+
+
+### Técnicas y procesos de big data
+- Profile report
+- Normalización del dataset
+- Eliminación de datos duplicados
+- Eliminación de registros no representativos
+- Ingenieria inversa de datos
+- Uso de clustering para agrupar las empresas y no tener que analizarlas individualmente
+- Se utiliza el sistema de nomenclatura comercial internacional *Standard Industrial Classification (SIC)*.
+
+### APIs y fuentes de datos
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 
 ### Dipositivos coniderados
 Para el MVP de nuestra solución solo consideramos un desarrollo exclusivamente en entorno web para dispositivos de dimensiones ordenador portátil y desktop.
@@ -106,42 +137,41 @@ Para una primera versión el test lo haremos de forma manual pero, en caso de co
 
 
 ## 🎨 Prototipos y diseño 🎨
-Para nuestro panel de control contemplamos dos tipos de vista diferentes: Vista general y vista en detalle.
+Para nuestro panel de control contemplamos dos tipos de vista diferentes: vista general y vista en detalle.
 
 ### Vista general de las empresas
 Para la vista general nos queremos inspirar en un diseño parecido al de abajo.
 <img src="images/green-calculator-generic-view-frontend.png" alt="Logo">
 
 ### Vista en detalle de la empresa
-Para la vista en detalle queremos inspirarnos en un diseño parecido al siguiente.
+Para la vista en detalle queremos inspirarnos en un diseño parecido al siguiente:
 <br></br>
 <img src="images/green-calculator-detailed-view-frontend.png" alt="Logo">
 
 ## 🤖 Stack técnico 🤖
 
 <!-- Frontend -->
-- [React](https://reactjs.org/docs/getting-started.html) : Adoptaremos el frontend de nuestra aplicación con react por su sencillez de uso, extensión en la comunidad de desarrollo y facilidad para adoptar la aplicación nativa con [React Native](https://reactnative.dev/docs/getting-started).
+- [React](https://reactjs.org/docs/getting-started.html) : adoptaremos el frontend de nuestra aplicación con react por su sencillez de uso, extensión en la comunidad de desarrollo y facilidad para adoptar la aplicación nativa con [React Native](https://reactnative.dev/docs/getting-started).
 - [Material UI](https://mui.com/): proporciona una gran variedad de componentes preconfigurados compatibles con [React](https://reactjs.org/docs/getting-started.html) por lo que delegamos la interfaz gráfica y experiencia de usuario a ésta librería.
-- [Netlify](https://www.netlify.com/) : Desplegamos nuestro frontend usando la plataforma cloud de Netlify. Ésta decisión está tomada basándose en el objetivo del proyecto que es crear una versión demo o MVP de nuestra solución. En un futuro lo ideal sería desplegar nuestro frontend en [AWS](https://aws.amazon.com/es/getting-started/hands-on/build-react-app-amplify-graphql/).
+- [Netlify](https://www.netlify.com/) : desplegamos nuestro frontend usando la plataforma cloud de Netlify. Ésta decisión está tomada basándose en el objetivo del proyecto que es crear una versión demo o MVP de nuestra solución. En un futuro lo ideal sería desplegar nuestro frontend en [AWS](https://aws.amazon.com/es/getting-started/hands-on/build-react-app-amplify-graphql/).
 
 <!-- Backend -->
-- [Node](https://nodejs.org/es/docs/) : Adoptaremos el backend de nuestra aplicación con NodeJS ya que tiene un ecosistema de librerías perfecto para el desarrollo de servicios y comparten lenguaje de base con ReactJS lo que permite reutilizar recursos IT.
-- [Express](https://www.npmjs.com/package/express) : Estando en el ámbito de NodeJS, Express provee una forma sencilla y out of the box de crear servidores y aplicaciones.
-- [Helmet](https://www.npmjs.com/package/helmet) : Por motivos de seguridad y por la facilidad de uso con Express, Helmet proporciona un middleware que actúa como un Facade de OOP el cual por debajo automatiza ciertas buenas prácticas que hacen los intercambios de información entre front y back más seguros.
-- [MySQL](https://www.npmjs.com/package/mysql) : Delegamos la conexión y la gestión de SQL queries a ésta librería de NPM.
-- [Mongoose](https://www.npmjs.com/search?q=mongoose) : Delegamos la conexión y gestión de queries a bases de datos no relacionales así como la creación de los esquemas a esta librería de npm.
-- [Otras librerías de NPM]() : Usaremos librerías como *body-parser*, *cors* y *dotenv* para añadir habilidades a nuestra aplicación de controlar los parámetros de las llamadas HTTP, el orígen de dichas llamadas y la gestión de variables de entorno.
-- [Heroku](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) :  
-Desplegamos nuestro servicio de backend en el proveedor cloud de Heroku en vez de un [EC2 de AWS](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) ya que por motivos de MVP, Heroku provee una facilidad mayor en términos de despliegue con nuestro repositorio de código en [GitHub](https://github.com/VictorGreco/hackathon-bbva-2021).
-- [GitHub & Git](https://github.com/) : El repositorio principal de nuestro código estará en GitHub ya que éste ofrece una gran facilidad de integración con otras plataformas cloud. 
+- [Node](https://nodejs.org/es/docs/) : adoptaremos el backend de nuestra aplicación con NodeJS ya que tiene un ecosistema de librerías perfecto para el desarrollo de servicios y comparten lenguaje de base con ReactJS lo que permite reutilizar recursos IT.
+- [Express](https://www.npmjs.com/package/express) : Estando en el ámbito de NodeJS, express provee una forma sencilla y out of the box de crear servidores y aplicaciones.
+- [Helmet](https://www.npmjs.com/package/helmet) : por motivos de seguridad y por la facilidad de uso con Express, helmet proporciona un middleware que actúa como un Facade de OOP el cual por debajo automatiza ciertas buenas prácticas que hacen los intercambios de información entre front y back más seguros.
+- [MySQL](https://www.npmjs.com/package/mysql) : delegamos la conexión y la gestión de SQL queries a ésta librería de NPM.
+- [Mongoose](https://www.npmjs.com/search?q=mongoose) : delegamos la conexión y gestión de queries a bases de datos no relacionales así como la creación de los esquemas a esta librería de npm.
+- [Otras librerías de NPM]() : usaremos librerías como *body-parser*, *cors* y *dotenv* para añadir habilidades a nuestra aplicación de controlar los parámetros de las llamadas HTTP, el orígen de dichas llamadas y la gestión de variables de entorno.
+- [Heroku](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) : desplegamos nuestro servicio de backend en el proveedor cloud de Heroku en vez de un [EC2 de AWS](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) ya que por motivos de MVP, heroku provee una facilidad mayor en términos de despliegue con nuestro repositorio de código en [GitHub](https://github.com/VictorGreco/hackathon-bbva-2021).
+- [GitHub & Git](https://github.com/) : el repositorio principal de nuestro código estará en GitHub ya que éste ofrece una gran facilidad de integración con otras plataformas cloud. 
 
 <!-- Databases -->
-- [S3 AWS](https://aws.amazon.com/es/s3/) : Implementaremos un servicio de almacenamiento cloud de archivos estáticos como s3 de AWS para la gestión de los archivos de datos principales.
-- [RDS AWS](https://aws.amazon.com/es/rds/) : Usaremos el servicio de bases de datos relacional de AWS para el volcado de los datos iniciales proporcionados y guardar las mejoras de los diferentes datos en el mismo.
-- [MongoDB Atlas](https://www.mongodb.com/atlas/database) : En caso de necesitar un soporte temporal de cálculo planteamos usar un servicio gratuito de MongoDB con el proveedor de Atlas.
+- [S3 AWS](https://aws.amazon.com/es/s3/) : implementaremos un servicio de almacenamiento cloud de archivos estáticos como s3 de AWS para la gestión de los archivos de datos principales.
+- [RDS AWS](https://aws.amazon.com/es/rds/) : usaremos el servicio de bases de datos relacional de AWS para el volcado de los datos iniciales proporcionados y guardar las mejoras de los diferentes datos en el mismo.
+- [MongoDB Atlas](https://www.mongodb.com/atlas/database) : en caso de necesitar un soporte temporal de cálculo planteamos usar un servicio gratuito de MongoDB con el proveedor de Atlas.
 
 <!-- 3rd party APIs -->
-- [APIs y datos de terceros](https://github.com/VictorGreco/hackathon-bbva-2021/blob/main/TDR.md#third-party-considerations) : Visita la sección *Third-party considerations* para más información.
+- [APIs y datos de terceros](https://github.com/VictorGreco/hackathon-bbva-2021/blob/main/TDR.md#third-party-considerations) : visita la sección *Third-party considerations* para más información.
 
 <img src="images/tech-stack-graphic.png" alt="Logo">
 
