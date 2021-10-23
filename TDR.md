@@ -94,32 +94,6 @@ How does internationalization and localization — translations, time zones, uni
 Como responsable de cuentas me gustaría poder tener un panel de control donde poder ver de forma sencilla todos los datos medioambientales de las empresas de nuestra base de datos mejorados y cruzados con datos de dominio publico.
 Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con un analisis más detallado para yo poder promover diferentes productos y asesoramiento.
 
-### Formulas de cálculo de emisiones
-- 
-- 
-- 
-- 
-- 
-
-
-### GDPR y tratamiento del dato
-
-### Técnicas y procesos de big data
-- 
-- 
-- 
-- 
-- 
-
-### APIs y fuentes de Datos
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
 
 ### Limitaciones técnicas
 Después de hacer una extensa busqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo.
