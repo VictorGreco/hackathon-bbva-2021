@@ -107,8 +107,8 @@ Después de hacer una extensa búsqueda en las fuentes de datos, parece ser que 
 
 
 ### GDPR y tratamiento del dato
-Nos regiremos, para el alcance del MVP, en la legislación mexicana referente al tratamiento del dato privado y público.
-En caso de desarrollar este proyecto a nivel global deríamos considerar las diferentes legislaciones de GDPR y traramiento del dato a nivel geografico. 
+Nos regimos, para el alcance del MVP, en la legislación mexicana referente al tratamiento del dato privado y público.
+En caso de desarrollar este proyecto a nivel global deberíamos considerar las diferentes legislaciones de GDPR y tratamiento del dato a nivel geográfico. 
 
 
 ### Técnicas y procesos de big data
@@ -116,7 +116,7 @@ En caso de desarrollar este proyecto a nivel global deríamos considerar las dif
 - Normalización del dataset
 - Eliminación de datos duplicados
 - Eliminación de registros no representativos
-- Ingenieria inversa de datos
+- Ingeniería inversa de datos
 - Uso de clustering para agrupar las empresas y no tener que analizarlas individualmente
 - Se utiliza el sistema de nomenclatura comercial internacional *Standard Industrial Classification (SIC)*.
 
