@@ -7,7 +7,7 @@
 # Calculadora Verde MVP - Hackathon BBVA 2021
 <!-- For the title I usually like to have a structure like: Technical Design Review - %PROJECT_CATEGORY% -->
 
-## 🔮 Overview 🔮
+## 🔮 Idea general 🔮
 <!-- Start at the beginning. What problem are you trying to solve? If you jump straight into solutions, it will be hard for people to orient themselves and will inevitably lead to misalignment and misunderstanding. It’s worth spending 2 or 3 sentences to effectively set the context for your spec.
 
 Then, briefly state your proposed solution. This should be enough for most people to decide whether they should continue reading and should be understandable by someone who is not familiar with the project. Between a few sentences and two paragraphs should be enough.-->
@@ -16,9 +16,7 @@ El mercado cada vez más está considerando la importancia de integrar solucione
 
 Por ello queremos proponer un panel de control interactivo que muestra de forma sencilla toda la información medioambiental de un dado dataset de empresas. Datos como las emisiones de CO2, el gráfico de evolución del impacto medioambiental e insights generados a partir de los consumos de gas, diesel y gasolina estarán contemplados.
 
-<br></br>
-
-## 💡 Background 💡
+## 💡 Motivación 💡
 
 <!-- It’s unlikely that writing the design document is the first time you’ve thought about the problem. The background section is an opportunity to bring readers up to speed, and share the context you have on the problem space.
 
@@ -31,13 +29,9 @@ Haciendo un análisis de mercado sobre las Calculadoras Verdes, hemos encontrado
 
 Nosotros queremos ir un paso más allá y proporcionar una forma sencilla y visual de hacer un seguimiento en el tiempo de dichas empresas y actividades medioambientales integrando todas las funcionalidades comunes en las Calculadoras Verdes.
 
-<br></br>
+## ⚓ Objetivos, no objetivos y futuros objetivos ⚓
 
-## ⚓ Goals, non-goals, and future goals ⚓
-
-<br></br>
-
-### ✅ Goals ✅
+### ✅ Objetivos ✅
 
 <!-- In order to build alignment and communicate a definition of done, it is important to clearly articulate the goals of this work. The best goals are simple, truthy sentences that describe a future state of the world. Unlike an OKR, it’s fine for these goals to be hyper-specific. Projects will often have 3-5 goals. -->
 
@@ -68,18 +62,13 @@ Nosotros queremos ir un paso más allá y proporcionar una forma sencilla y visu
 
 - Integración de procesos y fuentes de datos para mejorar la calidad de lso datos proporcionados.
 
-<br></br>
-
-
-### ❌ Non Goals ❌
+### ❌ No Objetivos ❌
 
 <!-- As well as explaining what you want to achieve, it is equally important to say what you are explicitly not addressing. These can sometimes be hard to identify, but imagine what another person might expect to be coupled with this work. -->
 
 - No ofreceremos una solución de tipo convencional donde el usuario pueda inserir sus datos y recibir una calificación energética.
 
-<br></br>
-
-### 🤞🏻 Futuros objetivos 🤞🏻
+### 🤞🏻 Futuros Objetivos 🤞🏻
 
 <!-- Future goals are an opportunity to list things you want to do in the future, but have descoped for this phase of the project. In other words, these are things you want to make sure your solution doesn’t accidentally make difficult or 
 impossible. -->
@@ -90,10 +79,18 @@ impossible. -->
 - Migración de JavaScript tanto en frontend com oen backend a TypeScript por el beneficio en seguridad que este aporta.
 - Nos enfocaremos solo en la versión desktop de nuestra UI, versiones móvil y tablet quedan relegadas a un futuro dessarrollo
 
-<br></br>
+## ⚙️ Especificaciones técnicas ⚙️
 
+### Histórias de usuario
+Como responsable de cuentas me gustaría poder tener un panel de control donde poder ver de forma sencilla todos los datos medioambientales de las empresas de nuestra base de datos mejorados y cruzados con datos de dominio publico.
+Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con un analisis más detallado para yo poder promover diferentes productos y asesoramiento.
 
-## ⚙️ Detailed design ⚙️
+### Formulas de cálculo de emisiones
+
+### GDPR y tratamiento del dato
+
+### Limitaciones técnicas
+Después de hacer una extensa busqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo 
 
 <!-- What are the user requirements?
 What systems will be affected?
@@ -110,38 +107,30 @@ Are there any web-specific considerations?
 How will the changes be tested?
 How does internationalization and localization — translations, time zones, unicode, etc. — affect your solution? -->
 
+## 🎨 Prototipos y diseño 🎨
+Para nuestro panel de control contemplamos dos tipos de vista diferentes: Vista general y vista en detalle.
 
+### Vista general de las empresas
+Para la vista general nos queremos inspirar en un diseño parecido al de abajo.
+<img src="images/green-calculator-generic-view-frontend.png" alt="Logo">
 
+### Vista en detalle de la empresa
+Para la vista en detalle queremos inspirarnos en un diseño parecido al siguiente.
 <br></br>
+<img src="images/green-calculator-detailed-view-frontend.png" alt="Logo">
 
 
-## 🎨 Mockups and wireframes 🎨
-
-<br></br>
-
-
-## 💣 Third-party considerations 💣
+## 💣 Consideraciones a terceros 💣
 
 <!-- Today it is common to rely on 3rd party platforms to support our development work, whether this be part of AWS or GCP, or a whole separate service. It’s worth thinking through the implications of using a third-party and looking ahead for potential future issues. -->
 
-<br></br>
+## ⏳ Estimación del trabajo ⏳
 
+## 🚀 Plan de ruta 🚀
 
-## ⏳ Work estimates ⏳
+## 🎢 Enfoques alternativos 🎢
 
-<br></br>
-
-
-## 🚀 Roll-out plan 🚀
-
-<br></br>
-
-
-## 🎢 Alternative approaches 🎢
-
-<br></br>
-
-## 🤖 Tech Stack 🤖
+## 🤖 Estack técnico 🤖
 
 <!-- Frontend -->
 - [React](https://reactjs.org/docs/getting-started.html) : Adoptaremos el frontend de nuestra aplicación con react por su senzillez de uso, extensión en la comunidad de desarrollo y facilidad para adoptar la aplicación nativa con [React Native](https://reactnative.dev/docs/getting-started).
@@ -165,9 +154,7 @@ How does internationalization and localization — translations, time zones, uni
 <!-- 3rd party APIs -->
 - [APIs y datos de terceros](https://github.com/VictorGreco/hackathon-bbva-2021/blob/main/TDR.md#third-party-considerations) : Visita la sección *Third-party considerations* para más informacion.
 
-<br></br>
-
-## 📚 Resources 📚
+## 📚 Otros recursos 📚
 
 - [Canvas](https://docs.google.com/drawings/d/15fluS7dNZnYVzJOZF_jkzR-5FCfLUPFGq3hQFZ6uvCc/edit)
 - [Slides](https://www.canva.com/design/DAEtkL1Kg2g/FOaSGUvGc59WjMyYzacdgw/view?utm_content=DAEtkL1Kg2g&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel#1)
