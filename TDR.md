@@ -57,13 +57,13 @@ Nosotros queremos ir un paso más allá y proporcionar una forma sencilla y visu
  
 - Integración de procesos y fuentes de datos para mejorar la calidad de lso datos proporcionados.
 
-### ❌ No Objetivos ❌
+### ❌ No objetivos ❌
 
 <!-- As well as explaining what you want to achieve, it is equally important to say what you are explicitly not addressing. These can sometimes be hard to identify, but imagine what another person might expect to be coupled with this work. -->
 
 - No ofreceremos una solución de tipo convencional donde el usuario pueda insertar sus datos y recibir una calificación energética.
 
-### 🤞🏻 Futuros Objetivos 🤞🏻
+### 🤞🏻 Futuros objetivos 🤞🏻
 
 <!-- Future goals are an opportunity to list things you want to do in the future, but have descoped for this phase of the project. In other words, these are things you want to make sure your solution doesn’t accidentally make difficult or 
 impossible. -->
@@ -163,7 +163,7 @@ En caso de desarrollar este proyecto a nivel global deberíamos considerar las d
 - [Eurostat statistics](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Greenhouse_gas_emission_statistics_-_carbon_footprints)
 - [Center for International Climate Research - Figures from the Global Carbon Budget 2020](https://folk.universitetetioslo.no/roberan/GCB2020.shtml)
 
-### Dipositivos coniderados
+### Dipositivos considerados
 Para el MVP de nuestra solución solo consideramos un desarrollo exclusivamente en entorno web para dispositivos de dimensiones ordenador portátil y desktop.
 
 ### Test y prubas técnicas
