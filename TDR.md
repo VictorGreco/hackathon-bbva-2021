@@ -72,7 +72,7 @@ impossible. -->
 - Integración de un apartado de noticias medioambientales de interés.
 - Test unitarios, integración y e2e de las funcionalidades propuestas.
 - Migración de JavaScript tanto en frontend como en backend a TypeScript por el beneficio en seguridad que este aporta.
-- Nos enfocaremos solo en la versión desktop de nuestra UI, versiones móvil y tablet quedan relegadas a un futuro desarrollo
+- Nos enfocaremos solo en la versión desktop de nuestra UI, versiones móvil y tablet quedan relegadas a un futuro desarrollo.
 
 ## ⚙️ Especificaciones técnicas ⚙️
 
@@ -129,7 +129,7 @@ Para la vista en detalle queremos inspirarnos en un diseño parecido al siguient
 - [Express](https://www.npmjs.com/package/express) : Estando en el ámbito de NodeJS, Express provee una forma sencilla y out of the box de crear servidores y aplicaciones.
 - [Helmet](https://www.npmjs.com/package/helmet) : Por motivos de seguridad y por la facilidad de uso con Express, Helmet proporciona un middleware que actúa como un Facade de OOP el cual por debajo automatiza ciertas buenas prácticas que hacen los intercambios de información entre front y back más seguros.
 - [MySQL](https://www.npmjs.com/package/mysql) : Delegamos la conexión y la gestión de SQL queries a ésta librería de NPM.
--[Mongoose](https://www.npmjs.com/search?q=mongoose) : Delegamos la conexión y gestión de queries a bases de datos no relacionales así como la creación de los esquemas a esta librería de npm.
+- [Mongoose](https://www.npmjs.com/search?q=mongoose) : Delegamos la conexión y gestión de queries a bases de datos no relacionales así como la creación de los esquemas a esta librería de npm.
 - [Otras librerías de NPM]() : Usaremos librerías como *body-parser*, *cors* y *dotenv* para añadir habilidades a nuestra aplicación de controlar los parámetros de las llamadas HTTP, el orígen de dichas llamadas y la gestión de variables de entorno.
 - [Heroku](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) :  
 Desplegamos nuestro servicio de backend en el proveedor cloud de Heroku en vez de un [EC2 de AWS](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) ya que por motivos de MVP, Heroku provee una facilidad mayor en términos de despliegue con nuestro repositorio de código en [GitHub](https://github.com/VictorGreco/hackathon-bbva-2021).
