@@ -1,9 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 # Calculadora Verde MVP - Hackathon BBVA 2021
 <!-- For the title I usually like to have a structure like: Technical Design Review - %PROJECT_CATEGORY% -->
 
@@ -81,17 +75,6 @@ impossible. -->
 
 ## ⚙️ Especificaciones técnicas ⚙️
 
-### Histórias de usuario
-Como responsable de cuentas me gustaría poder tener un panel de control donde poder ver de forma sencilla todos los datos medioambientales de las empresas de nuestra base de datos mejorados y cruzados con datos de dominio publico.
-Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con un analisis más detallado para yo poder promover diferentes productos y asesoramiento.
-
-### Formulas de cálculo de emisiones
-
-### GDPR y tratamiento del dato
-
-### Limitaciones técnicas
-Después de hacer una extensa busqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo 
-
 <!-- What are the user requirements?
 What systems will be affected?
 What new data structures are needed, what data structures will be changed?
@@ -107,6 +90,47 @@ Are there any web-specific considerations?
 How will the changes be tested?
 How does internationalization and localization — translations, time zones, unicode, etc. — affect your solution? -->
 
+### Histórias de usuario
+Como responsable de cuentas me gustaría poder tener un panel de control donde poder ver de forma sencilla todos los datos medioambientales de las empresas de nuestra base de datos mejorados y cruzados con datos de dominio publico.
+Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con un analisis más detallado para yo poder promover diferentes productos y asesoramiento.
+
+### Formulas de cálculo de emisiones
+- 
+- 
+- 
+- 
+- 
+
+
+### GDPR y tratamiento del dato
+
+### Técnicas y procesos de big data
+- 
+- 
+- 
+- 
+- 
+
+### APIs y fuentes de Datos
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+
+### Limitaciones técnicas
+Después de hacer una extensa busqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo.
+
+### Dipositivos coniderados
+Para el MVP de nuestra solución solo consideramos un desarrollo exlusivamente en entorno web para dispositivos de dimensiones ordenador portátil y desktop.
+
+### Test y prubas técnicas
+Para una primera versión el test lo haremos de forma manual pero, en caso de continuar con el desarrollo del proyecto a futuro consideramos implementar test unitario, test de integración y test de extremo a extremo utilizando principalmente frameworks como Jest, Mocha y Cypress.
+
+
 ## 🎨 Prototipos y diseño 🎨
 Para nuestro panel de control contemplamos dos tipos de vista diferentes: Vista general y vista en detalle.
 
@@ -118,17 +142,6 @@ Para la vista general nos queremos inspirar en un diseño parecido al de abajo.
 Para la vista en detalle queremos inspirarnos en un diseño parecido al siguiente.
 <br></br>
 <img src="images/green-calculator-detailed-view-frontend.png" alt="Logo">
-
-
-## 💣 Consideraciones a terceros 💣
-
-<!-- Today it is common to rely on 3rd party platforms to support our development work, whether this be part of AWS or GCP, or a whole separate service. It’s worth thinking through the implications of using a third-party and looking ahead for potential future issues. -->
-
-## ⏳ Estimación del trabajo ⏳
-
-## 🚀 Plan de ruta 🚀
-
-## 🎢 Enfoques alternativos 🎢
 
 ## 🤖 Estack técnico 🤖
 
@@ -145,6 +158,7 @@ Para la vista en detalle queremos inspirarnos en un diseño parecido al siguient
 -[Mongoose](https://www.npmjs.com/search?q=mongoose) : Delegamos la conexión y gestión de queries a bases de datos no relacionales así como la creación de los esquemas a esta librería de npm.
 - [Otras librerías de NPM]() : Usaremos librerías como *body-parser*, *cors* y *dotenv* para añadir habilidades a nuestra aplicación de controlar los parametros de las llamadas HTTP, el orígen de dichas llamadas y la gestión de variables de entorno.
 - [Heroku](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) : Desplegaremos nuestro servicio de backend en el proveedor cloud de Heroku en vez de un [EC2 de AWS](https://aws.amazon.com/es/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) ya que por motivos de MVP, Heroku provee una facilidad mayor en terminos de despliegue con nuestro repositorio de código en [GitHub](https://github.com/VictorGreco/hackathon-bbva-2021).
+- [GitHub & Git](https://github.com/) : El repositiorio principal de nuestro código estará en GitHub ya que éste ofrece una gran facilidad de integracion con otras plataformas cloud. 
 
 <!-- Databases -->
 - [S3 AWS](https://aws.amazon.com/es/s3/) : Implementaremos un servicio de almacenamiento cloud de archivos estáticos como s3 de AWS para la gestión de los archivos de datos principales.
@@ -154,21 +168,9 @@ Para la vista en detalle queremos inspirarnos en un diseño parecido al siguient
 <!-- 3rd party APIs -->
 - [APIs y datos de terceros](https://github.com/VictorGreco/hackathon-bbva-2021/blob/main/TDR.md#third-party-considerations) : Visita la sección *Third-party considerations* para más informacion.
 
+<img src="images/tech-stack-graphic.png" alt="Logo">
+
 ## 📚 Otros recursos 📚
 
 - [Canvas](https://docs.google.com/drawings/d/15fluS7dNZnYVzJOZF_jkzR-5FCfLUPFGq3hQFZ6uvCc/edit)
 - [Slides](https://www.canva.com/design/DAEtkL1Kg2g/FOaSGUvGc59WjMyYzacdgw/view?utm_content=DAEtkL1Kg2g&utm_campaign=designshare&utm_medium=link&utm_source=shareyourdesignpanel#1)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/RaulCatedra3003/Local-FileSystem-explorer.svg?style=flat-square
-[contributors-url]: https://github.com/RaulCatedra3003/Local-FileSystem-explorer/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/RaulCatedra3003/Local-FileSystem-explorer.svg?style=flat-square
-[forks-url]: https://github.com/RaulCatedra3003/Local-FileSystem-explorer/network/members
-[stars-shield]: https://img.shields.io/github/stars/RaulCatedra3003/Local-FileSystem-explorer.svg?style=flat-square
-[stars-url]: https://github.com/RaulCatedra3003/Local-FileSystem-explorer/stargazers
-[issues-shield]: https://img.shields.io/github/issues/RaulCatedra3003/Local-FileSystem-explorer.svg?style=flat-square
-[issues-url]: https://github.com/RaulCatedra3003/Local-FileSystem-explorer/issues
-[license-shield]: https://img.shields.io/github/license/RaulCatedra3003/Local-FileSystem-explorer.svg?style=flat-square
-[license-url]: https://github.com/RaulCatedra3003/Local-FileSystem-explorer/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
