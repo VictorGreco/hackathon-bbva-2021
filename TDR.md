@@ -99,17 +99,55 @@ Adicionalmente a esto me gustaría tener una vista detallada de cada empresa con
 Después de hacer una extensa búsqueda en las fuentes de datos, parece ser que no hay un ente internacional que regula todos estos aspectos más allá de GHG Protocol. Por ello y por el corto tiempo nos centraremos en fuentes de datos publicos que reflejan la situación de México y LATAM, dejamos la posibilidad de en futuras versiones escalar a la solución a nivel global.
 
 ### Formulas de cálculo de emisiones
-- 
-- 
-- 
-- 
-- 
+
+- *Emisiones del hogar* : 
+    - **Electricity** : use (kWh/yr) * EF (kg CO2e/kWh) = emissions (kg CO2e/yr)
+    - **Natural Gas** : use (therms/yr) * EF (kg CO2e/therms) = emissions (kg CO2e/yr)
+    - **Fuel Oil**: use (litres/yr) * EF (kg CO2e/litre) = emissions (kg CO2e/yr)
+    - **LPG** : use (litres/yr) * EF (kg CO2e/litre) = emissions (kg CO2e/yr)
+    - **Waste** : use (kg/week) * 52 * EF (kg CO2e/kg) = emissions (kg CO2e/yr)
+    - **Water** : use (litres/day) * 365 * EF (kg CO2e/kWh) = emissions (kg CO2e/yr)
+
+- *Viajes* : 
+    - **Vehicle** : distance (km/yr) /*EF (kg CO2e/km) = emissions (kg CO2e/yr)
+    - **Bus** : distance (km/yr) * EF (kg CO2e/km) = emissions (kg CO2e/yr)
+    - **Metro**: distance (km/yr) * EF (kg CO2e/km) = emissions (kg CO2e/yr)
+    - **Taxi**: distance (km/yr) * EF (kg CO2e/km) = emissions (kg CO2e/yr)
+    - **Rail**: distance (km/yr) * EF (kg CO2e/km) = emissions (kg CO2e/yr)
+    - **Flying** : distance (km/yr)* 1.09 * EF (kg CO2e/km) = emissions (kg CO2e/yr)
+
+- *Alimentos* : 
+    - **Red meat**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **White meat**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Dairy**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Cereals**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Vegetables**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Fruit**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Oils**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Snacks**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+    - **Drinks**: consumption (kCal/day)*365*EF (kg CO2e/kCal) = emissions (kg CO2e/yr)
+
+- *Productos* : 
+    - **Electrical** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Household** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Clothes** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Medical** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Recreational** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Other** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+
+- *Servicios* : 
+    - **Health** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Finance**: spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Recreation**: spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Education** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Vehicle**: spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Communications** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
+    - **Other** : spend ($/month) * 12 * EF (kg CO2e/$) = emissions (kg CO2e/yr)
 
 
 ### GDPR y tratamiento del dato
 Nos regimos, para el alcance del MVP, en la legislación mexicana referente al tratamiento del dato privado y público.
 En caso de desarrollar este proyecto a nivel global deberíamos considerar las diferentes legislaciones de GDPR y tratamiento del dato a nivel geográfico. 
-
 
 ### Técnicas y procesos de big data
 - Profile report
@@ -120,14 +158,11 @@ En caso de desarrollar este proyecto a nivel global deberíamos considerar las d
 - Uso de clustering para agrupar las empresas y no tener que analizarlas individualmente
 - Se utiliza el sistema de nomenclatura comercial internacional *Standard Industrial Classification (SIC)*.
 
-### APIs y fuentes de datos
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+### Fuentes de datos y APIs
+- [Códigos de actividad económica](https://www.sii.cl/ayudas/ayudas_por_servicios/1956-codigos-1959.html)
+- [API de Climatewatch](https://www.climatewatchdata.org/data-explorer/historical-emissions?historical-emissions-data-sources=cait&historical-emissions-gases=all-ghg&historical-emissions-regions=All%20Selected%2CMEX&historical-emissions-sectors=All%20Selected&page=1)
+- [Eurostat statistics](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Greenhouse_gas_emission_statistics_-_carbon_footprints)
+- [Center for International Climate Research - Figures from the Global Carbon Budget 2020](https://folk.universitetetioslo.no/roberan/GCB2020.shtml)
 
 ### Dipositivos coniderados
 Para el MVP de nuestra solución solo consideramos un desarrollo exclusivamente en entorno web para dispositivos de dimensiones ordenador portátil y desktop.
