@@ -40,7 +40,7 @@ app.get('/company', async (req, res) => {
 
         console.log("Started connect else process");
 
-        let query = "SELECT cd_cliente, nm_sector FROM basedataset";
+        let query = "SELECT cd_cliente, nm_sector FROM basedataset LIMIT 1000";
 
         connection.query(query, (error, response) => {
             console.log(error || response);
