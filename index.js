@@ -27,26 +27,24 @@ app.get('/status', async (req, res) => {
 
 app.get('/company', async (req, res) => {
     try {
-        res.status(200).json({
-            data: [
-                {
-                    empresa: 'first',
-                    sector: 1,
-                    producto: 1,
-                    gestion: 1,
-                    empleados: 1,
-                    huella: 1
-                },
-                {
-                    empresa: 'second',
-                    sector: 1,
-                    producto: 1,
-                    gestion: 1,
-                    empleados: 1,
-                    huella: 1
-                }
-            ]
-        });
+        res.status(200).json([
+            {
+                empresa: 'first',
+                sector: 1,
+                producto: 1,
+                gestion: 1,
+                empleados: 1,
+                huella: 1
+            },
+            {
+                empresa: 'second',
+                sector: 2,
+                producto: 2,
+                gestion: 2,
+                empleados: 2,
+                huella: 2
+            }
+        ]);
     } catch (error) {
         handleException(res, 503, error.message)
     }
