@@ -25,9 +25,28 @@ app.get('/status', async (req, res) => {
     }
 });
 
-app.get('/', async (req, res) => {
+app.get('/company', async (req, res) => {
     try {
-        res.status(200).json({});
+        res.status(200).json({
+            data: [
+                {
+                    empresa: 'empresa 1',
+                    sector: 1,
+                    producto: 1,
+                    gestion: 1,
+                    empleados: 1,
+                    huella: 1
+                },
+                {
+                    empresa: 'empresa 2',
+                    sector: 1,
+                    producto: 1,
+                    gestion: 1,
+                    empleados: 1,
+                    huella: 1
+                }
+            ]
+        });
     } catch (error) {
         handleException(res, 503, error.message)
     }
@@ -41,7 +60,7 @@ app.get('*', async (req, res) => {
     }
 })
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
