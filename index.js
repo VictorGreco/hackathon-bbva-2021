@@ -30,7 +30,7 @@ app.get('/company', async (req, res) => {
         res.status(200).json({
             data: [
                 {
-                    empresa: 'empresa 1',
+                    empresa: 'first',
                     sector: 1,
                     producto: 1,
                     gestion: 1,
@@ -38,7 +38,7 @@ app.get('/company', async (req, res) => {
                     huella: 1
                 },
                 {
-                    empresa: 'empresa 2',
+                    empresa: 'second',
                     sector: 1,
                     producto: 1,
                     gestion: 1,
